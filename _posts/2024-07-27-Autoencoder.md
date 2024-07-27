@@ -8,7 +8,7 @@ tags:
   - AI
 
 image:
-  path: https://github.com/user-attachments/assets/3863f7f2-6959-4e33-87a9-1cd31a7a6b0d
+  path: https://github.com/user-attachments/assets/0af299a1-c95d-4720-b6dc-43888b8f5af7
   alt: Responsive rendering of Chirpy theme on multiple devices.
 
 toc: true
