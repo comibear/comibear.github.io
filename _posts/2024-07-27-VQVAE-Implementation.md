@@ -18,7 +18,7 @@ date: 2024-07-27
 last_modified_at: 2024-07-27
 ---
 
-# 1. VQ-VAE
+## 1. VQ-VAE
 
 1) Import Libraries
 
@@ -71,7 +71,7 @@ train_loader = torch.utils.data.DataLoader(dataset=train_data, batch_size=BATCH_
 test_loader =  torch.utils.data.DataLoader(dataset=test_data, batch_size=BATCH_SIZE, shuffle=True, num_workers=8)
 ```
 
-4) Model Architecture & Structure - VQ Part
+4-1) Model Architecture & Structure - VQ Part
 
 
 ```python
@@ -127,7 +127,7 @@ class VectorQuantizer(nn.Module):
 #VQ(torch.randn([20, 8, 1, 1]).to(device))
 ```
 
-4. Model Architecture & Structure - VAE Part
+4-2) Model Architecture & Structure - VAE Part
 
 
 ```python
