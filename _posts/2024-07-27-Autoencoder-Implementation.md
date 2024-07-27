@@ -277,18 +277,11 @@ The Vanila Autoencoder have shortcuts below.
 So this shortcuts lead us to VAE (Variational Autoencoder)
 
 
-This is a blog for more details : https://medium.com/@hugmanskj/autoencoder-%EC%99%80-variational-autoencoder%EC%9D%98-%EC%A7%81%EA%B4%80%EC%A0%81%EC%9D%B8-%EC%9D%B4%ED%95%B4-171b3968f20b
+This is a [blog](https://medium.com/@hugmanskj/autoencoder-%EC%99%80-variational-autoencoder%EC%9D%98-%EC%A7%81%EA%B4%80%EC%A0%81%EC%9D%B8-%EC%9D%B4%ED%95%B4-171b3968f20b) for more details
 
-# Can we use Autoencoder as generative model??
+# 3. Can we use Autoencoder as generative model??
 
-
-```
-import os
-os.chdir('./1. Autoencoder/')
-```
-
-
-```
+```python
 model = torch.load("./Autoencoder_MNIST.pt", map_location=device)
 model.eval()
 
@@ -329,7 +322,7 @@ plt.show()
 
 
 
-```
+```python
 assert len(all_latent_vectors) == 10000
 
 reshaped_label_latent_vectors = np.array([llv.view(64).cpu() for llv in label_latent_vectors])
