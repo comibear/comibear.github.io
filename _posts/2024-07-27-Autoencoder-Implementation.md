@@ -279,7 +279,7 @@ So this shortcuts lead us to VAE (Variational Autoencoder)
 
 This is a [blog](https://medium.com/@hugmanskj/autoencoder-%EC%99%80-variational-autoencoder%EC%9D%98-%EC%A7%81%EA%B4%80%EC%A0%81%EC%9D%B8-%EC%9D%B4%ED%95%B4-171b3968f20b) for more details
 
-# 3. Can we use Autoencoder as generative model??
+## 3. Can we use Autoencoder as generative model??
 
 ```python
 model = torch.load("./Autoencoder_MNIST.pt", map_location=device)

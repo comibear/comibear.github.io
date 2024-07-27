@@ -306,7 +306,7 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/9ddcc39d-4f40-406e-ae49-a1540f7691c0)    
 
 
-# 3. Can we use VAE as generative model ??
+## 3. Can we use VAE as generative model ??
 
 ```python
 model = torch.load("./VAE_MNIST.pt", map_location=device)
@@ -379,7 +379,7 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/a22f81d0-4588-40d4-9e1f-54ed2059c63c)    
 
 
-# 4. And how about...?
+## 4. And how about...?
 
 
 ```python
