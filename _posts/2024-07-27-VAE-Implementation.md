@@ -9,7 +9,7 @@ tags:
 
 image:
   path: https://github.com/user-attachments/assets/db27ab4e-4828-4cd3-a94c-fade3aab535f
-  alt: Responsive rendering of Chirpy theme on multiple devices.
+  alt: Variational Autoencoder Implementation
 
 toc: true
 toc_sticky: true

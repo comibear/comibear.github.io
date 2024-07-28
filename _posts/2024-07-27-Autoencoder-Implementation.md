@@ -7,6 +7,10 @@ categories:
 tags:
   - AI
 
+image:
+  path: https://github.com/user-attachments/assets/dd745988-5017-40cb-bec0-0bc27cab8dca
+  alt: Autoencoder Implementation
+
 toc: true
 toc_sticky: true
 
