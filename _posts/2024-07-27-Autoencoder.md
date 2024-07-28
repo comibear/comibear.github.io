@@ -68,7 +68,8 @@ Variational Autoencoder 은 기존의 Autoencoder에 확률을 도입한다. 기
 
 이를 식으로 나타내면 다음과 같다. 
 
-$$x_{sampled} = \mu + \sigma \times \epsilon$$  
+$$x_{sampled} = \mu + \sigma \times \epsilon$$
+
 $$\mu = mean,\; \sigma = diversion,\; \epsilon = random$$
 
 
@@ -123,15 +124,6 @@ $$\mu = mean,\; \sigma = diversion,\; \epsilon = random$$
 
 실제로 2와 5 사이에 8이 존재하는 것을 확인할 수 있다. 매우 신기하지 않은가..?
 
-<script type="text/x-mathjax-config">
-
-MathJax.Hub.Config({
-
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-
-});
-
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
-
