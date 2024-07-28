@@ -9,7 +9,7 @@ tags:
 
 image:
   path: https://github.com/user-attachments/assets/0af299a1-c95d-4720-b6dc-43888b8f5af7
-  alt: Responsive rendering of Chirpy theme on multiple devices.
+  alt: Intro to Autoencoder
 
 toc: true
 toc_sticky: true
@@ -122,3 +122,16 @@ $$\mu = mean,\; \sigma = diversion,\; \epsilon = random$$
 ![image](https://github.com/user-attachments/assets/9ddcc39d-4f40-406e-ae49-a1540f7691c0)    
 
 실제로 2와 5 사이에 8이 존재하는 것을 확인할 수 있다. 매우 신기하지 않은가..?
+
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+
+});
+
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
