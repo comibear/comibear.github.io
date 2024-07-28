@@ -48,10 +48,39 @@ last_modified_at: 2024-07-27
 
 Variational Autoencoder 은 기존의 Autoencoder에 확률을 도입한다. 기존에는 Discrete하게 하나의 이미지에 하나의 latent vector만을 생성해냈다면, Variational Autoencdoer 은 latent space 에서 하나의 점을 중심으로 [Gaussian distribution](https://en.wikipedia.org/wiki/Normal_distribution) 을 형성한다. 
 
+<br>
+
 ![image](https://github.com/user-attachments/assets/a98f1842-646c-438b-84e1-9be00013eb22)*Image from https://medium.com/@hugmanskj/autoencoder-%EC%99%80-variational-autoencoder%EC%9D%98-%EC%A7%81%EA%B4%80%EC%A0%81%EC%9D%B8-%EC%9D%B4%ED%95%B4-171b3968f20b*
 
-Gaussian Distirbution은 평균과 분산을 통해서 정의되기 때문에, VAE의 Encoder 부분은 Latent space의 dimension에 따라 mean과 diversion을 학습하여, 그에 따른 확률분포를 생성해낸다. (사실상 mean부분과 diversion부분을 우리가 정의하고, 개념적으로만 생성한다는 표현이 옳다.)
+<br>
 
-![image](https://github.com/user-attachments/assets/c1c79826-de04-4685-beeb-68169cdda7a5)
+`Gaussian Distirbution`은 평균과 분산을 통해서 정의되기 때문에, `VAE`의 `Encoder` 부분은 `Latent space`의 `dimension`에 따라 **mean**과 **diversion**을 학습하여, 그에 따른 확률분포를 생성해낸다. (사실상 mean부분과 diversion부분을 우리가 정의하고, 개념적으로만 생성한다는 표현이 옳다.)
 
-그런데 한 가지 문제가 있다. 이렇게 형성된 Gaussian Distribution은 하나의 확률분포이기 때문에, Decoder의 Input이 될 수 없다. Decoder의 Input으로는 하나의 latent vector이 정의되어야 하는데, 이를 어떻게 해소할까?
+<br>
+<br>
+
+![image](https://github.com/user-attachments/assets/c1c79826-de04-4685-beeb-68169cdda7a5)*Image from https://medium.com/@hugmanskj/autoencoder-%EC%99%80-variational-autoencoder%EC%9D%98-%EC%A7%81%EA%B4%80%EC%A0%81%EC%9D%B8-%EC%9D%B4%ED%95%B4-171b3968f20b*
+
+그런데 한 가지 문제가 있다. 이렇게 형성된 `Gaussian Distribution은` 하나의 확률분포이기 때문에, `Decoder`의 Input이 될 수 없다. `Decoder`의 Input으로는 하나의 `latent vector`이 정의되어야 하는데, 이를 어떻게 해소할까?
+
+바로 `Sampling` 기법이다. 사실 이름만 거창하지, 기존에 만들어진 확률분포를 기준으로 임의의 벡터를 생성하는 것이다. 당연하게도 각 `Gaussian Distribution`의 확률에 따라서 `Sampling` 이라는 이름으로 벡터가 정의된다. 
+
+이를 식으로 나타내면 다음과 같다. 
+
+$$x_{sampled} = \mu + \sigma \times \epsilon$$  
+$$\mu = mean,\; \sigma = diversion,\; \epsilon = random$$
+
+
+얼핏 보면 매우 단순하지만, 이 식에는 **`reparamerterize trick`** 이 적용되었다. 기존의 $\sigma$ 를 통해서 곧바로 `noise` 를 적용시켜주는 것이 아니라, 새로운 파라미터인 $\epsilon$ 을 만들어서, 곱해주는 방식을 사용해주는 것이다. 만약에 $\sigma$ 를 직접 사용하게 되면, $\sigma$에 대한 역전파 계산이 불가능해지기 때문에, 랜덤성을 가지는 새로운 변수를 만들어 곱해주는 방식을 사용한다. 
+
+# 4. More about Variational Autoencoder
+
+사실, Variational Autoencoder 과 기존의 Autoencoder 은 아예 다른 개념으로부터 파생되었다고 할 수 있다. 생긴 것은 매우 유사하지만, Autoencoder 은 encoder 을 만들어내기 위해서 decoder 을 이어붙은 모델이고, Variational Autoencoder 은 decoder 을 만들기 위하여 encoder 이라는 부분을 더해준 것이다. 
+
+ 
+ 그렇기에 Variational Autoencoder은 하나의 Generative Model로써 사용이 가능하다. latent space 로 매핑된 평균과 분산의 변수들을 활용해서 sampling 하게 되면, 이를 decode 했을 시에 유의미한 새로운 이미지가 탄생한다. 
+
+![image](https://github.com/user-attachments/assets/de1754d6-8a26-4b5e-bb10-8f1f9846709d)    
+
+이는 앞서 보였던 Autoencoder의 방식과 유사하게, latent space에서 각 벡터를 샘플링하여 디코딩한 이미지인데, Autoencoder 에 비하여 매우 높은 이미지 생성 능력을 가진 것을 볼 수 있다. 
+
