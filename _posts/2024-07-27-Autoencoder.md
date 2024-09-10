@@ -11,6 +11,7 @@ image:
   path: https://github.com/user-attachments/assets/0af299a1-c95d-4720-b6dc-43888b8f5af7
   alt: Intro to Autoencoder
 
+math: true
 toc: true
 toc_sticky: true
 
