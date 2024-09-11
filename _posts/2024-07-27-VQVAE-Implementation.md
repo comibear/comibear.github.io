@@ -2,10 +2,8 @@
 title: "[AI] Vector Quantized Variational Autoencoder Implementation"
 description: "Simple Implementation for Vector Quantized Variational Autoencoder"
 writer: Sangyun Won
-categories:
-  - AI
-tags:
-  - AI
+categories: [AI, Implementation]
+tags: AI
 
 image:
   path: https://github.com/user-attachments/assets/5e656bf9-0d03-4fc0-bc5d-c50ff4feec4b

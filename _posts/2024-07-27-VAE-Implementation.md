@@ -2,10 +2,8 @@
 title: "[AI] Variational Autoencoder Implementation"
 description: "Simple Implementation for Variational Autoencoder"
 writer: Sangyun Won
-categories:
-  - AI
-tags:
-  - AI
+categories: [AI, Implementation]
+tags: AI
 
 image:
   path: https://github.com/user-attachments/assets/db27ab4e-4828-4cd3-a94c-fade3aab535f
