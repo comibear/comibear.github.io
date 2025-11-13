@@ -4,16 +4,16 @@ const CONFIG = {
     name: "comibear",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Robotics researcher",
-    bio: "I develop everything using node.",
+    bio: "Undergraduate student @ Cyber Defense",
     email: "wonsang4232@gmail.com",
-    linkedin: "상윤-원-985924145",
+    linkedin: "sangyun-won-985924145",
     github: "raebimoc",
     instagram: "",
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `comibear-log`,
+      href: "https://github.com/raebimoc/morethan-log",
     },
   ],
   // blog setting (required)
