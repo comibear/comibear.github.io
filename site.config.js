@@ -10,12 +10,12 @@ const CONFIG = {
     github: "comibear",
     instagram: "raebimoc",
   },
-  // projects: [
-  //   {
-  //     name: `comibear-log`,
-  //     href: "https://github.com/comibear/morethan-log",
-  //   },
-  // ],
+  projects: [
+    {
+      name: `comibear-log`,
+      href: "https://github.com/comibear/comibear.github.io",
+    },
+  ],
   // blog setting (required)
   blog: {
     title: "comiebear-log",
