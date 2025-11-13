@@ -4,7 +4,7 @@ const CONFIG = {
     name: "comibear",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Robotics researcher",
-    bio: "Undergraduate student @ Cyber Defense",
+    bio: "Undergrad Student @ Korea Univ. Cyber Defense",
     email: "wonsang4232@gmail.com",
     linkedin: "sangyun-won-985924145",
     github: "comibear",
@@ -13,7 +13,7 @@ const CONFIG = {
   projects: [
     {
       name: `comibear-log`,
-      href: "https://github.com/raebimoc/morethan-log",
+      href: "https://github.com/comibear/morethan-log",
     },
   ],
   // blog setting (required)
@@ -25,7 +25,7 @@ const CONFIG = {
 
   // CONFIG configration (required)
   //link: "https://comibear-log.vercel.app",
-  link: "https://comibear.blog",
+  link: "https://www.comibear.blog",
   since: 2025, // If leave this empty, current year will be used.
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
@@ -70,7 +70,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 21600 * 7, // revalidate time for [slug], index
+  revalidateTime: 3600, // revalidate time for [slug], index
 }
 
 module.exports = { CONFIG }
