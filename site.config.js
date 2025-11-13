@@ -7,8 +7,8 @@ const CONFIG = {
     bio: "Undergraduate student @ Cyber Defense",
     email: "wonsang4232@gmail.com",
     linkedin: "sangyun-won-985924145",
-    github: "raebimoc",
-    instagram: "",
+    github: "comibear",
+    instagram: "raebimoc",
   },
   projects: [
     {
@@ -20,11 +20,12 @@ const CONFIG = {
   blog: {
     title: "comibear-log",
     description: "welcome to comibear-log!",
-    scheme: "dark", // 'light' | 'dark' | 'system'
+    scheme: "light", // 'light' | 'dark' | 'system'
   },
 
   // CONFIG configration (required)
-  link: "https://comibear-log.vercel.app",
+  //link: "https://comibear-log.vercel.app",
+  link: "https://comibear.blog",
   since: 2025, // If leave this empty, current year will be used.
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
