@@ -12,8 +12,8 @@ const CONFIG = {
   },
   projects: [
     {
-      // name: `comibear-log`,
-      // href: "https://github.com/comibear/comibear.github.io",
+      name: `Auto Trading`,
+      href: "https://github.com/comibear/CoinAutoTrading",
     },
   ],
   // blog setting (required)
